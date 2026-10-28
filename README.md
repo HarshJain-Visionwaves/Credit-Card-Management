@@ -1,10 +1,10 @@
-# CardDemo - Mainframe Credit Card Management Application
+# CreditCardManagement - Mainframe Credit Card Management Application
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![License](https://img.shields.io/badge/license-Apache%202.0-green.svg)
 
 ## Executive Summary
-CardDemo is a comprehensive mainframe application that simulates a credit card management system. Designed specifically to showcase AWS and partner technologies for mainframe migration and modernization scenarios, it provides a realistic environment for testing various modernization approaches including discovery, migration, performance testing, service enablement, and more.
+CreditCardManagement is a comprehensive mainframe application that simulates a credit card management system. Designed specifically to showcase AWS and partner technologies for mainframe migration and modernization scenarios, it provides a realistic environment for testing various modernization approaches including discovery, migration, performance testing, service enablement, and more.
 
 ## Table of Contents
 - [Description](#description)
@@ -25,7 +25,7 @@ CardDemo is a comprehensive mainframe application that simulates a credit card m
 - [Project Status](#project-status)
 
 ## Description
-CardDemo is a mainframe application designed to test and showcase AWS and partner technology for mainframe migration and modernization use-cases. It provides a realistic environment for:
+CreditCardManagement is a mainframe application designed to test and showcase AWS and partner technology for mainframe migration and modernization use-cases. It provides a realistic environment for:
 
 - Application discovery and analysis
 - Migration assessment and planning
@@ -61,7 +61,7 @@ The application intentionally incorporates various coding styles and patterns to
 
 ## Optional Features
 
-CardDemo includes several optional modules that extend the base functionality:
+CreditCardManagement includes several optional modules that extend the base functionality:
 
 1. **Credit Card Authorizations with IMS, DB2, and MQ**
    - Simulate credit card authorization requests using MQ
@@ -110,13 +110,13 @@ CardDemo includes several optional modules that extend the base functionality:
 
      | HLQ    | Name          | Format | Length |
      | :----- | :------------ | :----- | -----: |
-     | AWS.M2 | CARDDEMO.JCL  | FB     |     80 |
-     | AWS.M2 | CARDDEMO.PROC | FB     |     80 |
-     | AWS.M2 | CARDDEMO.CBL  | FB     |     80 |
-     | AWS.M2 | CARDDEMO.CPY  | FB     |     80 |
-     | AWS.M2 | CARDDEMO.BMS  | FB     |     80 |
-     | AWS.M2 | CARDDEMO.ASM  | FB     |     80 |
-     | AWS.M2 | CARDDEMO.MACLIB| FB    |     80 |
+     | AWS.M2 | CreditCardManagement.JCL  | FB     |     80 |
+     | AWS.M2 | CreditCardManagement.PROC | FB     |     80 |
+     | AWS.M2 | CreditCardManagement.CBL  | FB     |     80 |
+     | AWS.M2 | CreditCardManagement.CPY  | FB     |     80 |
+     | AWS.M2 | CreditCardManagement.BMS  | FB     |     80 |
+     | AWS.M2 | CreditCardManagement.ASM  | FB     |     80 |
+     | AWS.M2 | CreditCardManagement.MACLIB| FB    |     80 |
 
 3. **Upload Source Code**
    - Upload the application source folders from the repository to your mainframe
@@ -130,18 +130,18 @@ CardDemo includes several optional modules that extend the base functionality:
 
      | Dataset name                      | Description                                  | Copybook     | Format | Length |
      | :---------------------------------| :------------------------------------------- | :----------- | :----- | -----: |
-     | AWS.M2.CARDDEMO.USRSEC.PS         | User Security file                           | CSUSR01Y     | FB     |     80 |
-     | AWS.M2.CARDDEMO.ACCTDATA.PS       | Account Data                                 | CVACT01Y     | FB     |    300 |
-     | AWS.M2.CARDDEMO.CARDDATA.PS       | Card Data                                    | CVACT02Y     | FB     |    150 |
-     | AWS.M2.CARDDEMO.CUSTDATA.PS       | Customer Data                                | CVCUS01Y     | FB     |    500 |
-     | AWS.M2.CARDDEMO.CARDXREF.PS       | Customer Account Card Cross reference        | CVACT03Y     | FB     |     50 |
-     | AWS.M2.CARDDEMO.DALYTRAN.PS.INIT  | Transaction database initialization record   | CVTRA06Y     | FB     |    350 |
-     | AWS.M2.CARDDEMO.DALYTRAN.PS       | Transaction data for posting                 | CVTRA06Y     | FB     |    350 |
-     | AWS.M2.CARDDEMO.TRANSACT.VSAM.KSDS| Online transaction data                      | CVTRA05Y     | FB     |    350 |
-     | AWS.M2.CARDDEMO.DISCGRP.PS        | Disclosure Groups                            | CVTRA02Y     | FB     |     50 |
-     | AWS.M2.CARDDEMO.TRANCATG.PS       | Transaction Category Types                   | CVTRA04Y     | FB     |     60 |
-     | AWS.M2.CARDDEMO.TRANTYPE.PS       | Transaction Types                            | CVTRA03Y     | FB     |     60 |
-     | AWS.M2.CARDDEMO.TCATBALF.PS       | Transaction Category Balance                 | CVTRA01Y     | FB     |     50 |
+     | AWS.M2.CreditCardManagement.USRSEC.PS         | User Security file                           | CSUSR01Y     | FB     |     80 |
+     | AWS.M2.CreditCardManagement.ACCTDATA.PS       | Account Data                                 | CVACT01Y     | FB     |    300 |
+     | AWS.M2.CreditCardManagement.CARDDATA.PS       | Card Data                                    | CVACT02Y     | FB     |    150 |
+     | AWS.M2.CreditCardManagement.CUSTDATA.PS       | Customer Data                                | CVCUS01Y     | FB     |    500 |
+     | AWS.M2.CreditCardManagement.CARDXREF.PS       | Customer Account Card Cross reference        | CVACT03Y     | FB     |     50 |
+     | AWS.M2.CreditCardManagement.DALYTRAN.PS.INIT  | Transaction database initialization record   | CVTRA06Y     | FB     |    350 |
+     | AWS.M2.CreditCardManagement.DALYTRAN.PS       | Transaction data for posting                 | CVTRA06Y     | FB     |    350 |
+     | AWS.M2.CreditCardManagement.TRANSACT.VSAM.KSDS| Online transaction data                      | CVTRA05Y     | FB     |    350 |
+     | AWS.M2.CreditCardManagement.DISCGRP.PS        | Disclosure Groups                            | CVTRA02Y     | FB     |     50 |
+     | AWS.M2.CreditCardManagement.TRANCATG.PS       | Transaction Category Types                   | CVTRA04Y     | FB     |     60 |
+     | AWS.M2.CreditCardManagement.TRANTYPE.PS       | Transaction Types                            | CVTRA03Y     | FB     |     60 |
+     | AWS.M2.CreditCardManagement.TCATBALF.PS       | Transaction Category Balance                 | CVTRA01Y     | FB     |     50 |
 
 5. **Initialize the Environment**
    - Execute the following JCLs in sequence:
@@ -154,7 +154,7 @@ CardDemo includes several optional modules that extend the base functionality:
      | CARDFILE | Loads Card database with credit card sample data  |                 |
      | CUSTFILE | Creates customer database                         |                 |
      | XREFFILE | Loads Customer Card account cross reference       |                 |
-     | CREADB21 | Creates CardDemo Db2 database and loads tables    | Db2: Transaction Type Mgmt |
+     | CREADB21 | Creates CreditCardManagement Db2 database and loads tables    | Db2: Transaction Type Mgmt |
      | TRANFILE | Copies initial Transaction file to VSAM           |                 |
      | TRANEXTR | Extracts TRAN type and category tables from Db2   | Db2: Transaction Type Mgmt |
      | DISCGRP  | Copies initial Disclosure Group file to VSAM      |                 |
@@ -174,19 +174,19 @@ CardDemo includes several optional modules that extend the base functionality:
    - Option 2: Use CEDA transaction to manually define resources:
 
      ```
-     DEFINE LIBRARY(COM2DOLL) GROUP(CARDDEMO) DSNAME01(&HLQ..LOADLIB)
-     DEF PROGRAM(COCRDLIC) GROUP(CARDDEMO)
-     DEF MAPSET(COCRDLI) GROUP(CARDDEMO)
-     DEFINE PROGRAM(COSGN00C) GROUP(CARDDEMO) DA(ANY) TRANSID(CC00) DESCRIPTION(LOGIN)
-     DEFINE TRANSACTION(CC00) GROUP(CARDDEMO) PROGRAM(COSGN00C) TASKDATAL(ANY)
+     DEFINE LIBRARY(COM2DOLL) GROUP(CreditCardManagement) DSNAME01(&HLQ..LOADLIB)
+     DEF PROGRAM(COCRDLIC) GROUP(CreditCardManagement)
+     DEF MAPSET(COCRDLI) GROUP(CreditCardManagement)
+     DEFINE PROGRAM(COSGN00C) GROUP(CreditCardManagement) DA(ANY) TRANSID(CC00) DESCRIPTION(LOGIN)
+     DEFINE TRANSACTION(CC00) GROUP(CreditCardManagement) PROGRAM(COSGN00C) TASKDATAL(ANY)
      ```
 
 8. **Install and Load Resources**
    - Install the resources in your CICS region:
 
      ```
-     CEDA INSTALL TRANS(CCLI) GROUP(CARDDEMO)
-     CEDA INSTALL FILE(CARDDAT) GROUP(CARDDEMO)
+     CEDA INSTALL TRANS(CCLI) GROUP(CreditCardManagement)
+     CEDA INSTALL FILE(CARDDAT) GROUP(CreditCardManagement)
      CECI LOAD PROG(COCRDUP)
      CECI LOAD PROG(COCRDUPC)
      ```
@@ -199,7 +199,7 @@ CardDemo includes several optional modules that extend the base functionality:
      ```
 
 ### Accessing the Application
-- **Online Functions**: Start the CardDemo application using the CC00 transaction
+- **Online Functions**: Start the CreditCardManagement application using the CC00 transaction
   - Admin access: Use userid ADMIN001 with password PASSWORD
   - User access: Use userid USER0001 with password PASSWORD
 - **Batch Functions**: See the "Running Batch Jobs" section below
@@ -234,7 +234,7 @@ Execute the following JCLs in sequence to run the full batch process:
 
 ## Application Details
 
-CardDemo is a comprehensive credit card management application built primarily using COBOL. It provides functionality for managing accounts, credit cards, transactions, and bill payments.
+CreditCardManagement is a comprehensive credit card management application built primarily using COBOL. It provides functionality for managing accounts, credit cards, transactions, and bill payments.
 
 ### User Types
 
@@ -303,7 +303,7 @@ Admin users can perform the following functions:
 | ACCTFILE | IDCAMS   | Refresh Account Master                               |                |
 | CARDFILE | IDCAMS   | Refresh Card Master                                  |                |
 | CUSTFILE | IDCAMS   | Refresh Customer Master                              |                |
-| CREADB21 | DSNTEP4  | Creates CardDemo Db2 database and loads tables       | Db2: Transaction Type Mgmt |
+| CREADB21 | DSNTEP4  | Creates CreditCardManagement Db2 database and loads tables       | Db2: Transaction Type Mgmt |
 | TRANEXTR | DSNTIAUL | Extracts latest Db2 data for Transaction types       | Db2: Transaction Type Mgmt |
 | DISCGRP  | IDCAMS   | Load Disclosure Group File                           |                |
 | TRANFILE | IDCAMS   | Load Transaction Master file                         |                |
@@ -385,14 +385,14 @@ This project is intended to be a community resource and is released under the Ap
 
 ## Project Status
 
-The CardDemo application has been enhanced with optional features that extend its functionality:
+The CreditCardManagement application has been enhanced with optional features that extend its functionality:
 - Credit Card Authorizations with IMS, DB2, and MQ
 - Transaction Type Management with DB2
 - Account Extractions using MQ and VSAM
 - Additional JCL Utilities
 - Enhanced Data and Copybook Features
 
-These optional features make CardDemo an even more useful resource for customers looking to modernize their mainframe applications. With modules for DB2, MQ, IMS DB, JCL utilities, and more data formats now available, customers can leverage CardDemo to test a wider array of mainframe migration, refactoring, replatforming, and augmentation scenarios.
+These optional features make CreditCardManagement an even more useful resource for customers looking to modernize their mainframe applications. With modules for DB2, MQ, IMS DB, JCL utilities, and more data formats now available, customers can leverage CreditCardManagement to test a wider array of mainframe migration, refactoring, replatforming, and augmentation scenarios.
 
 Last updated: April 2025
 
